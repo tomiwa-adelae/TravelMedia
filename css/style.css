@@ -1,0 +1,436 @@
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+
+html {
+   font-size: 10px;
+}
+
+body {
+   font-size: 1.7rem;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   background-color: white;
+   color: black;
+   line-height: 1.6em;
+}
+
+button {
+   outline: none;
+}
+.Container {
+   width: 75%;
+   max-width: 1280px;
+   margin: auto;
+}
+
+li {
+   list-style: none;
+}
+
+a {
+   color: white;
+}
+
+a:hover {
+   text-decoration: none;
+   color: white;
+}
+
+header {
+   background-color: #f57c5a;
+   color: white;
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100vw;
+   z-index: 15;
+}
+
+.header {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: space-between;
+   height: 8vh;
+}
+
+.header h2 {
+   font-weight: lighter;
+   font-size: 2.5rem;
+}
+
+.header li {
+   display: inline-block;
+   margin-right: 1.6rem;
+   font-size: 1.3rem;
+   font-weight: lighter;
+   transition: all 0.3s ease;
+}
+
+.header li a {
+   display: inline-block;
+}
+
+.header a:hover {
+   color: #333;
+}
+
+#carousel-section {
+   /* z-index: -11; */
+}
+
+.carousel-img {
+   height: 80vh;
+   width: 100vw;
+}
+
+.carousel-text h1 {
+   font-size: 3.5rem;
+   font-weight: lighter;
+}
+
+.carousel-text p {
+   font-size: 2rem;
+   margin-top: 1.5rem;
+   font-weight: lighter;
+}
+
+.carousel-text button {
+   background-color: #f56d47;
+   padding: 1rem 2rem;
+   margin-top: 1rem;
+   border: none;
+   outline: none;
+   color: white;
+   font-weight: lighter;
+   font-size: 13px;
+   transition: all 0.5s ease;
+}
+
+.carousel-text button:hover {
+   background-color: #ec876a;
+}
+
+.carousel-right {
+   text-align: right;
+   margin-bottom: 25vh;
+   color: #333;
+}
+
+.carousel-left {
+   text-align: left;
+   margin-bottom: 1vh;
+   color: #333;
+}
+
+.carousel-center {
+   text-align: center;
+   margin-bottom: 40vh;
+   color: #333;
+}
+
+#search-section {
+   background-color: #f57c5a;
+   color: white;
+   padding-bottom: 2rem;
+}
+
+#search-section h1 {
+   text-align: center;
+   padding-top: 3rem;
+   padding-bottom: 1.5rem;
+   font-size: 3rem;
+}
+
+.search-input {
+   width: 100%;
+   /* margin-bottom: 3rem; */
+   outline: none;
+   border: none;
+   padding: 0.8rem 1.5rem;
+}
+
+#icon-cards {
+   background-color: rgb(219, 218, 218);
+   padding: 3rem 0;
+   color: #333;
+}
+
+.icon-row {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+   align-items: center;
+}
+
+.icon-item {
+   background-color: white;
+   padding: 2rem 1.5rem;
+   margin-right: 2rem;
+   text-align: center;
+   z-index: 10;
+   box-shadow: 3px 3px 5px 6px #ccc;
+}
+
+.icon-item i {
+   font-size: 5rem;
+   margin: 1.5rem 0;
+   color: #f56d47;
+}
+
+#popular-places {
+   padding: 2rem 0;
+}
+
+#popular-places h1 {
+   margin-bottom: 2rem;
+   text-align: center;
+   color: #f56d47;
+}
+
+#popular-places h1 span {
+   color: #333;
+}
+
+#popular-places h2 {
+   color: #f56d47;
+}
+
+#popular-places p {
+   font-size: 1.4rem;
+}
+
+.cards {
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+}
+
+#follow-section {
+   background-color: #ee8162;
+   color: white;
+   text-align: center;
+   padding-top: 2rem;
+}
+
+#follow-section h1 {
+   padding: 2rem 0 0.7rem 0;
+   font-weight: lighter;
+   font-size: 2.7rem;
+}
+
+#follow-section p {
+   font-size: 1.4rem;
+}
+
+#follow-section i {
+   font-size: 3.5rem;
+   margin-bottom: 2rem;
+   margin-right: 1rem;
+}
+
+#gallery {
+   padding-top: 2.4rem;
+   transition: all 0.1s ease;
+}
+
+#gallery img:hover {
+   border: 1px solid #f56d47;
+   opacity: 0.9;
+}
+
+.gallery-title h1 {
+   color: #333;
+   text-align: center;
+   margin-bottom: 1.3rem;
+   font-size: 2.7rem;
+}
+
+.gallery-title span {
+   color: #f56d47;
+}
+
+.more-photos {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   /* margin-left: 40%; */
+   margin-top: 2.5rem;
+   background-color: #f56d47;
+   padding: 1rem 2.7rem;
+   border: none;
+   color: white;
+   font-weight: lighter;
+   font-size: 13px;
+   transition: all 0.5s ease;
+   outline: none;
+}
+
+.more-photos:hover {
+   background-color: #ec876a;
+}
+
+#contact-section {
+   padding-top: 2.4rem;
+}
+
+.first {
+   background-color: #f56d47;
+   color: white;
+   padding: 2rem 1.5rem;
+   text-align: center;
+}
+
+.first i {
+   font-size: 5rem;
+   color: white;
+   background-color: #f56d47;
+   margin: 0.7rem 0 1.5rem 0;
+}
+
+.first p {
+   font-size: 1.4rem;
+}
+
+.list h1 {
+   padding-top: 2rem;
+}
+
+.list li {
+   font-size: 1.4rem;
+}
+
+form {
+   background-color: rgb(219, 218, 218);
+   padding: 3.7rem 2rem;
+}
+
+form input {
+   font-size: 1.4rem;
+   border: none;
+   border-bottom: 1px solid rgb(139, 138, 138);
+   outline: none;
+   width: 100%;
+   background-color: rgb(219, 218, 218);
+   padding-bottom: 1rem;
+}
+
+form textarea {
+   font-size: 1.4rem;
+   border: none;
+   border-bottom: 1px solid rgb(139, 138, 138);
+   outline: none;
+   width: 100%;
+   background-color: rgb(219, 218, 218);
+   padding-bottom: 1rem;
+   margin: 0.5rem 0;
+}
+
+form h2 {
+   margin-bottom: 1.4rem;
+}
+
+form input::placeholder {
+   font-size: 1.3rem;
+}
+
+form textarea::placeholder {
+   font-size: 1.3rem;
+}
+
+form button {
+   background-color: #f56d47;
+   padding: 0.5rem 2.5rem;
+   border: none;
+   outline: none;
+   color: white;
+   font-weight: lighter;
+   font-size: 13px;
+   transition: all 0.5s ease;
+}
+
+form button:hover {
+   background-color: #ec876a;
+}
+
+footer {
+   background-color: #ec8062;
+   padding: 4rem;
+}
+
+footer p {
+   text-align: center;
+   color: white;
+   font-weight: lighter;
+}
+
+.error::placeholder {
+   color: #ec623c;
+}
+
+.countries {
+   /* display: none; */
+}
+
+.countries ul {
+   background-color: white;
+}
+
+.countries li {
+   width: 100%;
+   border-bottom: 1px solid #f56d47;
+   color: #f56d47;
+   margin-bottom: 1rem;
+   padding: 0.5rem 2rem;
+   cursor: pointer;
+}
+
+.autocomplete-panel {
+   background-color: white;
+   color: #333;
+}
+
+.autocomplete-panel > div {
+   padding: 1rem;
+   border-top: 1px #999 solid;
+   cursor: pointer;
+   transition: all ease 0.4s;
+}
+
+.autocomplete-panel > div:hover {
+   background-color: #d1684b;
+   color: white;
+}
+
+@media (max-width: 880px) {
+   .header li {
+      display: none;
+   }
+   .header h2 {
+      margin-left: 25vw;
+   }
+   .carousel-img {
+      height: 55vh;
+      width: 100%;
+   }
+   .carousel-text {
+      display: none;
+   }
+   .icon-row {
+      display: block;
+   }
+   .icon-item {
+      margin-bottom: 2rem;
+   }
+   .cards {
+      display: block;
+   }
+}
+
+@media (max-width: 780px) {
+   .gallery img {
+      display: block;
+      width: 100%;
+   }
+}
